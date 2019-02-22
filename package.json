@@ -1,0 +1,18 @@
+{
+  "name": "Todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm start\" \"cd client && npm start\"",
+    "preinstall": "npm install ./client && npm install ./backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backend": "file:backend",
+    "client": "file:client",
+    "concurrently": "^4.1.0"
+  }
+}
